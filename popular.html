@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="page-ready">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="محبوب‌ترین محصولات امروز We Know — پرجستجوترین‌ها بر اساس بازدید کاربران.">
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>محبوب‌ترین‌های امروز | We Know</title>
+</head>
+
+<body>
+
+    <div class="background">
+       <div class="blob blob1"></div>
+       <div class="blob blob2"></div>
+       <div class="blob blob3"></div>
+       <div class="noise"></div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar light-mode">
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-blob b1"></div>
+            <div class="sidebar-blob b2"></div>
+            <div class="shatter-grid" id="shatterGrid"></div>
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <span onclick="toggleSidebar()">✕</span>
+                </div>
+                <ul>
+                    <li><a href="category.html?cat=electronics"><span class="cat-icon" style="background:linear-gradient(135deg,#4F8CFF,#7C3AED)">📱</span> الکترونیکی</a></li>
+                    <li><a href="category.html?cat=beauty"><span class="cat-icon" style="background:linear-gradient(135deg,#EC4899,#F472B6)">💄</span> آرایشی و بهداشتی</a></li>
+                    <li><a href="category.html?cat=food"><span class="cat-icon" style="background:linear-gradient(135deg,#22C55E,#84CC16)">🍎</span> خوراکی</a></li>
+                    <li><a href="category.html?cat=fashion"><span class="cat-icon" style="background:linear-gradient(135deg,#F59E0B,#FB923C)">👕</span> مد و پوشاک</a></li>
+                    <li><a href="category.html?cat=home"><span class="cat-icon" style="background:linear-gradient(135deg,#06B6D4,#22D3EE)">🏠</span> خانه و آشپزخانه</a></li>
+                    <li><a href="category.html?cat=services"><span class="cat-icon" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA)">🛠️</span> خدمات</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="popular.html">🔥 محبوب‌ترین‌های امروز</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+        <div class="container">
+            <a href="index.html" class="logo"><span>We Know</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">خانه</a></li>
+                <li><a href="products.html">محصولات</a></li>
+                <li><a href="wallet.html">کیف پول</a></li>
+                <li><a href="index.html#about">درباره ما</a></li>
+                <li><a href="index.html#contact">تماس</a></li>
+            </ul>
+
+            <button class="login-btn" id="authBtn">
+                <span class="icon">👤</span>
+                ورود / ثبت نام
+            </button>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <header class="page-hero">
+        <span class="hero-badge pulse-badge reveal">🔥 امروز داغه</span>
+        <h1 class="reveal">محبوب‌ترین‌های امروز</h1>
+        <p class="reveal">محصولاتی که کاربرای We Know بیشترین بازدید رو داشتن — بر اساس تعداد بازدید امروز مرتب شدن.</p>
+    </header>
+
+    <!-- ================= LIST ================= -->
+
+    <section class="products-grid container">
+        <div class="grid" id="popularGrid"></div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>© 2026 We Know | تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="products-data.js"></script>
+    <script src="script.js"></script>
+    <script src="popular.js"></script>
+
+    <div id="authModal" class="auth-modal">
+        <div class="auth-box">
+            <span class="close-modal" onclick="closeAuth()">×</span>
+            <h2 id="modalTitle">ورود به حساب</h2>
+            <form id="authForm" onsubmit="return false;">
+            <input type="text" id="authName" placeholder="اسمت" style="display:none;">
+            <input type="email" id="authEmail" placeholder="ایمیل خود را وارد کنید" required>
+            <input type="password" id="authPassword" placeholder="رمز عبور" required>
+            <button type="submit" class="auth-submit">ورود</button>
+        </form>
+        <p id="authError" class="auth-error"></p>
+            <p class="toggle-text" onclick="toggleAuthMode()">
+                هنوز حساب ندارید؟ <span id="toggleBtn">ثبت‌نام کنید</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

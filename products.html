@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="page-ready">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="همه‌ی محصولات پرطرفدار با تاریخچه‌ی قیمت واقعی، تحلیل هوش مصنوعی و مقایسه‌ی فروشگاه‌ها — همه در یک‌جا با We Know.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="همه‌ی محصولات | We Know">
+    <meta property="og:description" content="همه‌ی محصولات پرطرفدار با تاریخچه‌ی قیمت واقعی، تحلیل هوش مصنوعی و مقایسه‌ی فروشگاه‌ها — همه در یک‌جا با We Know.">
+    <meta property="og:locale" content="fa_IR">
+    <meta name="twitter:card" content="summary">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>همه‌ی محصولات | We Know</title>
+</head>
+
+<body>
+
+    <div class="background">
+       <div class="blob blob1"></div>
+       <div class="blob blob2"></div>
+       <div class="blob blob3"></div>
+       <div class="noise"></div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-blob b1"></div>
+            <div class="sidebar-blob b2"></div>
+            <div class="shatter-grid" id="shatterGrid"></div>
+            <div class="sidebar-content">
+                <div class="sidebar-header">
+                    <h3>دسته‌بندی‌ها</h3>
+                    <span onclick="toggleSidebar()">✕</span>
+                </div>
+                <ul>
+                    <li><a href="category.html?cat=electronics"><span class="cat-icon" style="background:linear-gradient(135deg,#4F8CFF,#7C3AED)">📱</span> الکترونیکی</a></li>
+                    <li><a href="category.html?cat=beauty"><span class="cat-icon" style="background:linear-gradient(135deg,#EC4899,#F472B6)">💄</span> آرایشی و بهداشتی</a></li>
+                    <li><a href="category.html?cat=food"><span class="cat-icon" style="background:linear-gradient(135deg,#22C55E,#84CC16)">🍎</span> خوراکی</a></li>
+                    <li><a href="category.html?cat=fashion"><span class="cat-icon" style="background:linear-gradient(135deg,#F59E0B,#FB923C)">👕</span> مد و پوشاک</a></li>
+                    <li><a href="category.html?cat=home"><span class="cat-icon" style="background:linear-gradient(135deg,#06B6D4,#22D3EE)">🏠</span> خانه و آشپزخانه</a></li>
+                    <li><a href="category.html?cat=services"><span class="cat-icon" style="background:linear-gradient(135deg,#8B5CF6,#A78BFA)">🛠️</span> خدمات</a></li>
+                </ul>
+                <div class="sidebar-footer">
+                    <a href="popular.html">🔥 محبوب‌ترین‌های امروز</a>
+                </div>
+            </div>
+        </div>
+
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+
+        <div class="container">
+            <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 100 100" width="34" height="34" aria-hidden="true"><defs><linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1E3A8A"/><stop offset="100%" stop-color="#10B981"/></linearGradient></defs><circle cx="50" cy="50" r="42" fill="none" stroke="url(#logoGrad)" stroke-width="5"/><path d="M28 32 L36 56 L44 42 L52 54 L60 44 L69 61" fill="none" stroke="url(#logoGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M63 59 L70 62 L69 54" fill="none" stroke="url(#logoGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>We Know</span></a>
+
+            <ul class="nav-links">
+                <li><a href="index.html#home">خانه</a></li>
+                <li><a href="products.html" class="active">محصولات</a></li>
+                <li><a href="wallet.html">کیف پول</a></li>
+                <li><a href="index.html#about">درباره ما</a></li>
+                <li><a href="index.html#contact">تماس</a></li>
+            </ul>
+
+            <button class="login-btn">
+                <span class="icon">👤</span>
+                ورود / ثبت نام
+            </button>
+        </div>
+    </nav>
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <header class="page-hero">
+        <span class="hero-badge reveal">📦 همه‌ی محصولات</span>
+        <h1 class="reveal">هرچی می‌خوای، قیمت واقعی‌شو ببین</h1>
+        <p class="reveal">روی هر محصول بزن تا صفحه‌ی کامل با تحلیل هوش مصنوعی، نمودار قیمت و نظرات رو ببینی.</p>
+    </header>
+
+    <!-- ================= PRODUCTS GRID ================= -->
+
+    <section class="products-grid container">
+        <div class="grid" id="productGrid">
+
+            <a href="product.html?id=p1" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">📱</span>
+                <h3>گوشی موبایل سامسونگ Galaxy A55</h3>
+                <p class="price">۲۲,۱۰۰,۰۰۰ تومان</p>
+                <span class="product-badge">۱۸٪ زیر سقف قیمت</span>
+            </a>
+
+            <a href="product.html?id=p2" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">🎧</span>
+                <h3>هدفون بی‌سیم سونی WH-1000XM5</h3>
+                <p class="price">۱۸,۴۵۰,۰۰۰ تومان</p>
+                <span class="product-badge">۲۶٪ زیر سقف قیمت</span>
+            </a>
+
+            <a href="product.html?id=p3" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">💄</span>
+                <h3>ست آرایشی میبلین</h3>
+                <p class="price">۱,۲۵۰,۰۰۰ تومان</p>
+                <span class="product-badge fake">تخفیف الکی</span>
+            </a>
+
+            <a href="product.html?id=p4" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">👕</span>
+                <h3>کاپشن زمستانی مردانه</h3>
+                <p class="price">۹۸۰,۰۰۰ تومان</p>
+                <span class="product-badge">۱۲٪ زیر سقف قیمت</span>
+            </a>
+
+            <a href="product.html?id=p5" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">🏠</span>
+                <h3>ماشین لباسشویی ال‌جی ۸ کیلویی</h3>
+                <p class="price">۳۱,۹۰۰,۰۰۰ تومان</p>
+                <span class="product-badge">۱۴٪ زیر سقف قیمت</span>
+            </a>
+
+            <a href="product.html?id=p6" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">🍎</span>
+                <h3>پک آجیل و خشکبار پذیرایی</h3>
+                <p class="price">۶۵۰,۰۰۰ تومان</p>
+                <span class="product-badge">۹٪ زیر سقف قیمت</span>
+            </a>
+
+            <a href="product.html?id=p7" class="product-card spin-link scroll-reveal spin-reveal">
+                <span class="product-icon">🛠️</span>
+                <h3>سرویس نصب و راه‌اندازی هوشمندسازی خانه</h3>
+                <p class="price">۲,۴۰۰,۰۰۰ تومان</p>
+                <span class="product-badge">۷٪ زیر سقف قیمت</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>© 2026 We Know | تمامی حقوق محفوظ است.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="authModal" class="auth-modal">
+        <div class="auth-box">
+            <span class="close-modal" onclick="closeAuth()">×</span>
+            <h2 id="modalTitle">ورود به حساب</h2>
+            <form id="authForm" onsubmit="return false;">
+            <input type="text" id="authName" placeholder="اسمت" style="display:none;">
+            <input type="email" id="authEmail" placeholder="ایمیل خود را وارد کنید" required>
+            <input type="password" id="authPassword" placeholder="رمز عبور" required>
+            <button type="submit" class="auth-submit">ورود</button>
+        </form>
+        <p id="authError" class="auth-error"></p>
+            <p class="toggle-text" onclick="toggleAuthMode()">
+                هنوز حساب ندارید؟ <span id="toggleBtn">ثبت‌نام کنید</span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
